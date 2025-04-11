@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Awesome Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    main {
+      flex: 2;
+      margin-right: 2rem;
+    }
+    article {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    article h2 {
+      color: #ee0979;
+    }
+    aside {
+      flex: 1;
+    }
+    .widget {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .widget h3 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 0.5rem 0;
+    }
+    .tags span {
+      background: #ff6a00;
+      color: white;
+      padding: 0.3rem 0.6rem;
+      margin: 0.2rem;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Awesome Blog</h1>
+    <p>Thoughts, stories and ideas.</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <main>
+      <article>
+        <h2>The Power of Simplicity</h2>
+        <p><em>By Admin | April 10, 2025</em></p>
+        <p><strong>Introduction:</strong> In this post, we explore how simplicity in design can improve user experience and productivity.</p>
+        <p><strong>Body:</strong> Simplicity doesn't mean lack of features. It's about making things intuitive and removing unnecessary clutter. Whether you're designing a user interface or writing clean code, the principle of simplicity helps highlight what matters most.</p>
+        <p><strong>Conclusion:</strong> Embrace simplicity in your work. It leads to clarity, efficiency, and a better experience for everyone involved.</p>
+        <div class="tags">
+          <span>#Design</span>
+          <span>#Simplicity</span>
+          <span>#Productivity</span>
+        </div>
+      </article>
+    </main>
+    <aside>
+      <div class="widget">
+        <h3>Follow Me</h3>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h3>Recent Posts</h3>
+        <ul>
+          <li><a href="#">Understanding Async/Await</a></li>
+          <li><a href="#">Clean Code Principles</a></li>
+          <li><a href="#">Getting Started with Web Components</a></li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h3>Categories</h3>
+        <ul>
+          <li>Development</li>
+          <li>Design</li>
+          <li>Productivity</li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h3>Privacy & Policy</h3>
+        <p>Read our <a href="#">privacy policy</a> and learn how we handle your data responsibly.</p>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <p>&copy; 2025 My Awesome Blog. All rights reserved.</p>
+    <p>Built with ❤️ using HTML5 & CSS3.</p>
+  </footer>
+</body>
+</html>
