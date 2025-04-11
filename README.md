@@ -18,6 +18,7 @@
     - [6. Docker Scout](#6-docker-scout)
     - [7. Learning Center](#7-learning-center)
     - [8. Extensions](#8-extensions)
+10. [Docker Commands for Images and Containers](#docker-commands-for-images-and-containers)
 
 ---
 
@@ -145,5 +146,67 @@ docker stop <container_id>
 ### 8. Extensions
 - Plugins that add features to Docker Desktop.
 - Examples: Portainer, Trivy, OpenLens.
+
+---
+## Docker Commands for Images and Containers
+
+### 🖼️ Commands for Images
+
+```bash
+# Build an image from a Dockerfile
+docker build -t <image_name> .
+
+# Build without cache
+docker build -t <image_name> . --no-cache
+
+# List local images
+docker images
+
+# Remove a specific image
+docker rmi <image_name>
+
+# Remove all unused images
+docker image prune
+```
+
+### 📦 Commands for Containers
+
+```bash
+# Create and run a container with a custom name
+docker run --name <container_name> <image_name>
+
+# Run a container and publish a port from container to host
+docker run -p <host_port>:<container_port> <image_name>
+
+# Run a container in the background
+docker run -d <image_name>
+
+# Start or stop an existing container
+docker start|stop <container_name or container_id>
+
+# Remove a stopped container
+docker rm <container_name>
+
+# Open a shell inside a running container
+docker exec -it <container_name> sh
+
+# View and follow container logs
+docker logs -f <container_name>
+
+# Inspect a running container
+docker inspect <container_name or container_id>
+
+# List running containers
+docker ps
+
+# List all containers (running and stopped)
+docker ps --all
+
+# View container resource usage statistics
+docker container stats
+```
+
+📚 **Reference:** [Docker Cheat Sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+
 
 ---
